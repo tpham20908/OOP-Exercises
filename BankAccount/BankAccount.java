@@ -4,11 +4,11 @@ public class BankAccount {
 	private double balance = 0.0;
 	private String name, email, phone;
 
-	BankAccount() {
-		phone = "0";
-		acctNo = 0;
-		name = "no name";
-		email = "default@email.com";
+	public BankAccount(String name, int acctNo, String phone, String email) {
+		this.name = name;
+		this.acctNo = acctNo;
+		this.phone = phone;
+		this.email = email;
 	}
 
 	// // instance methods
