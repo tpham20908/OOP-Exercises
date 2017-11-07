@@ -45,6 +45,11 @@ class Fibonacci {
     System.out.println(fibonacci(8));
     System.out.println(fibonacci(9));
     System.out.println(fibonacci(10));
+    System.out.println(fibonacci(11));
+    System.out.println(fibonacci(12));
+    System.out.println(fibonacci(13));
+    System.out.println(fibonacci(14));
+    System.out.println(fibonacci(15));
   }
   public static double fibonacci(int num) {
     // return (num <= 2) ? 1 : (fibonacci(num - 1) + fibonacci(num - 2));
@@ -74,6 +79,8 @@ class Factorial {
     System.out.println(factorial(8));
     System.out.println(factorial(9));
     System.out.println(factorial(10));
+    System.out.println(factorial(11));
+    System.out.println(factorial(12));
   }
 
   public static double factorial(int x) {
