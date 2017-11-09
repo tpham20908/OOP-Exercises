@@ -12,4 +12,8 @@ public class LahsaApso extends BarkingDog {
 		// }
 		System.out.println("I'm LahsaApso");
 	}
+
+	public String sounds() {
+		return "Sound of LahsaApso";
+	}
 }

@@ -12,4 +12,8 @@ public class GoldenRetriever extends BarkingDog {
 		// }
 		System.out.println("I'm GoldenRetriever");
 	}
+
+	public String sounds() {
+		return "Sound of GoldenRetriever";
+	}
 }

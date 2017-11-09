@@ -12,4 +12,8 @@ public class Basenji extends YodelingDog {
 		// }
 		System.out.println("I'm Basenji");
 	}
+
+	public String sounds() {
+		return "Sound of Basenji";
+	}
 }

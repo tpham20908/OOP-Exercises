@@ -12,4 +12,8 @@ public class YodelingDog extends Dog {
 		// }
 		System.out.println("I'm a Yodeling Dog");
 	}
+
+	public String sounds() {
+		return "Sound of YodelingDog";
+	}
 }

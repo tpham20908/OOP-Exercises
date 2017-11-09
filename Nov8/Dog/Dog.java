@@ -1,4 +1,4 @@
-public class Dog {
+public abstract class Dog {
 	private int pantRate;
 
 	public Dog(int pantRate) {
@@ -11,4 +11,6 @@ public class Dog {
 		// System.out.println();
 		System.out.println("I'm a Dog");
 	}
+
+	public abstract String sounds();
 }

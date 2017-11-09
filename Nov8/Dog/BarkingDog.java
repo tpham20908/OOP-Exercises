@@ -12,4 +12,8 @@ public class BarkingDog extends Dog {
 		// }
 		System.out.println("I'm a Barking Dog");
 	}
+
+	public String sounds() {
+		return "Sound of BarkingDog";
+	}
 }
