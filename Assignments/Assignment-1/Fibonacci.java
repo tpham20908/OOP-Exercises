@@ -1,43 +1,17 @@
+//W.A.P to print Fibonacci series for the given n numbers (use functions)
 class Fibonacci {
   public static void main(String[] args) {
-    //W.A.P to print Fibonacci series for the given n numbers (use functions)
-    
-    // System.out.println(fibonacci1(1));
-    // System.out.println(fibonacci1(2));
-    // System.out.println(fibonacci1(3));
-    // System.out.println(fibonacci1(4));
-    // System.out.println(fibonacci1(5));
-    // System.out.println(fibonacci1(6));
-    // System.out.println(fibonacci1(7));
-    // System.out.println(fibonacci1(8));
-    // System.out.println(fibonacci1(9));
-    // System.out.println(fibonacci1(10));
-    // System.out.println(fibonacci1(11));
-    // System.out.println(fibonacci1(12));
-    // System.out.println(fibonacci1(13));
-    // System.out.println(fibonacci1(14));
-    // System.out.println(fibonacci1(15));
-    // System.out.println(fibonacci1(70));
 
-    System.out.println(fibonacci2(1));
-    System.out.println(fibonacci2(2));
-    System.out.println(fibonacci2(3));
-    System.out.println(fibonacci2(4));
-    System.out.println(fibonacci2(5));
-    System.out.println(fibonacci2(6));
-    System.out.println(fibonacci2(7));
-    System.out.println(fibonacci2(8));
-    System.out.println(fibonacci2(9));
-    System.out.println(fibonacci2(10));
-    System.out.println(fibonacci2(11));
-    System.out.println(fibonacci2(12));
-    System.out.println(fibonacci2(13));
-    System.out.println(fibonacci2(14));
-    System.out.println(fibonacci2(15));
-    System.out.println(fibonacci2(50));
+    // for (int i = 1; i < 50; i++) {
+    //   System.out.println(fibonacci1(i));
+    // }
+
+    for (int i = 1; i < 50; i++) {
+      System.out.println(fibonacci2(i));
+    }
   }
 
-  // loop method: much faster
+  // loop method: much faster than recursive method
   public static double fibonacci1(int num) {
     int first = 1, last = 1, value = 0;
     if (num == 1)

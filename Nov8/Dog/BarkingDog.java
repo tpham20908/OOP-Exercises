@@ -8,7 +8,7 @@ public class BarkingDog extends Dog {
 
 	public void bark() {
 		// for (int i = 0; i < barkFrequency; i++) {
-		// 	System.out.print("Barking ");	
+		// 	System.out.print("Barking ");
 		// }
 		System.out.println("I'm a Barking Dog");
 	}
