@@ -19,13 +19,13 @@ public class InterfaceExample {
     public static void main(String[] args) {
        int ch;
        String ln = null, fn = null, sin = null;
-       double gs, wages, hours, weekklySalary;
+       double gs, wages, hours, weekklySalary, baseSalary;
        Scanner scanner=new Scanner(System.in);
        while(true)
        {
             System.out.println("Enter Option\n1.Commision Employee\n"
-                    + "2.Salaried Employee\n3.Hourly Employee\n4.Invoice\n"
-                    + "5.Exit");
+                    + "2. Base + Commission Employee\n3.Salaried Employee\n"
+                    + "4.Hourly Employee\n5.Invoice\n6.Exit");
             ch=scanner.nextInt();
             switch(ch)
             {
@@ -35,20 +35,29 @@ public class InterfaceExample {
                     gs = scanner.nextDouble();
 
                     CommissionEmployee cemp = new CommissionEmployee(fn,ln,sin,gs,0.1);
-                    System.out.println("Salary = "+cemp.getPaymentAmount());
+                    System.out.println("Salary = "+ cemp.getPaymentAmount());
                     break;
                 case 2:
+                    getGeneralInfo(fn, ln, sin);
+                    System.out.println("Enter gross sale:");
+                    gs = scanner.nextDouble();
+                    System.out.println("Enter base salary:");
+                    baseSalary = scanner.nextDouble();
+                    BasePlusCommissionEmployee bcemp = new BasePlusCommissionEmployee(fn, ln, sin, gs, 0.1, baseSalary);
+                    System.out.println("Salary = " + bcemp.getPaymentAmount());
+                    break;
+                case 3:
                     getGeneralInfo(fn, ln, sin);
                     System.out.println("Enter weekkly salary:");
                     weekklySalary = scanner.nextDouble();
                     SalariedEmployee semp = new SalariedEmployee(weekklySalary, fn, ln, sin);
-                    System.out.println("Salary = " +semp.getPaymentAmount());
-                    break;
-                case 3:
+                    System.out.println("Salary = " + semp.getPaymentAmount());
                     break;
                 case 4:
                     break;
                 case 5:
+                    break;
+                case 6:
                     System.exit(0);
                 default:
                     System.out.println("Invalid Choice:");

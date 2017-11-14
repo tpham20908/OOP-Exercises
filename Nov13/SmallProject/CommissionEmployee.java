@@ -12,14 +12,15 @@
 public class CommissionEmployee extends Employee {
     private double grossSale;
     private double commissionRate=0.1;
-   
-    
+
+
     public double getPaymentAmount(){
         return(grossSale*commissionRate);
-    
+
     }
 
-    public CommissionEmployee(String firstName,String lastName,String SIN,double grossSale, double commissionRate) {
+    public CommissionEmployee(String firstName, String lastName, String SIN,
+        double grossSale, double commissionRate) {
         super(firstName,lastName,SIN);
         this.grossSale = grossSale;
         this.commissionRate = commissionRate;
@@ -40,7 +41,4 @@ public class CommissionEmployee extends Employee {
     public void setCommissionRate(double commissionRate) {
         this.commissionRate = commissionRate;
     }
-    
-    
-    
 }

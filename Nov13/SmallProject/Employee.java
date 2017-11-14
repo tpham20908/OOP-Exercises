@@ -44,6 +44,4 @@ public abstract class Employee implements Payable{
     public void setSIN(String SIN) {
         this.SIN = SIN;
     }
-    
-    
 }
